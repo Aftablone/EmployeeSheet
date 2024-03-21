@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.html">
+    <!-- <img src="images.png" href="images.png"> -->
+    </head>
+    <body>
+        
+    <h1>Submit Form </h1>
+    
+    <form id="submitForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="thankYouMessage" style="display: none;">
+        <h2>Thanks for submitting!</h2>
+    </div>
+    
+    <script>
+        document.getElementById("submitForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            
+            // Here you can send the email and phone number to your backend for processing
+            
+            // Display thank you message
+            document.getElementById("submitForm").style.display = "none";
+            document.getElementById("thankYouMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
+
+                </form>
+
+<title>About page</title>
+<style>
+    .button{
+        height: auto;
+        width: 2000px;
+        background-color: blue;
+        color: green;
+    }
+
+        body {
+         height: 100px;
+        padding: 200px 350px;
+        height: 200px;
+        width: 380px;
+        position:relative;
+        margin: 50px;
+        background-color: #18b63abb;
+        color:black;
+        border: none;
+        cursor: pointer;
+
+        input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #1dc910bb;
+        color: rgb(18, 6, 96);
+        border: none;
+        cursor: pointer;
+        }
+    }
+    image{
+        height: 100px;
+        width: 100px;
+        position: var();
+    }
+</style>
+</body>
+</html>
+
+
+
+ <!-- <a href="https://this.com" style="background-color: brown;color: blue;">link to this</a> -->
